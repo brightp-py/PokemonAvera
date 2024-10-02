@@ -112,14 +112,14 @@ class ImageLoader:
         
         ax_st = self.fig.add_subplot(self.gs_right[5, :2])
         self.slider_threshold = Slider(
-            ax_st, "Threshold", 0.2, 3.0,
+            ax_st, "Threshold", 0.2, 4.0,
             valinit = 0.7, dragging = False
         )
         self.slider_threshold.on_changed(self.update_threshold)
 
         ax_sc = self.fig.add_subplot(self.gs_right[5, 2:4])
         self.slider_chrom_rad = Slider(
-            ax_sc, "Rad", 0, 2,
+            ax_sc, "Rad", 0, 3,
             valinit = 1, dragging = False
         )
         self.slider_chrom_rad.on_changed(self.update_chromatic_radius)
